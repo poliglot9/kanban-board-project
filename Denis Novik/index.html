@@ -2,167 +2,149 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-    integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing portfolio</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
-    <div class="header">
-      <div class="wrapper">
-        <ul class="nav">
-          <li class="header-item">
-            <a class="header-item" href="#">Home</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item" href="#"> About me</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item" href="#">Skills</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item" href="#">Portfolio</a>
-          </li>
-          <li class="header-item">
-            <a class="header-item" href="#">Contacts</a>
-          </li>
-        </ul>
-      </div>
-      <hr />
+
+  
+
+  <header class="header">
+    <nav class="header_nav">
+      <ul class="header_list">
+        <li class="header_item"><a class="header_link" href="#">Home</a></li>
+        <li class="header_item"><a class="header_link" href="#aboutme">About me</a></li>
+        <li class="header_item"><a class="header_link" href="#">Skills</a></li>
+        <li class="header_item"><a class="header_link" href="#">Portfolio</a></li>
+        <li class="header_item"><a class="header_link" href="#">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="header_hero">
+      <ul class="header_content">
+        <li class="header_logo">Denis <br> Novik</li>
+        <li class="header_desc">UX | UI designer <br> 24 years old, Minsk</li>
+        <li class="header_lang">RU <span>| ENG</span></li>
+        <li></li>
+      </ul>
+      <div class="header_img"></div>
+    </div>
+    <div class="burger" id="burger" onclick="burger_click()">
+      <span class="row row_first"></span>
+      <span class="row row_second"></span>
+      <span class="row row_third"></span>
     </div>
   </header>
+
   <main>
-    <div class="wrapper">
-      <div class="main-top">
-        <div class="main-top-name">
-          Denis <br />
-          Novik
-        </div>
-        <div class="main-top-old">
-          UX | UI designer <br />
-          24 years old, Minsk
-        </div>
-        <div class="main-top-language"><span>ENG</span> | RU</div>
-      </div>
-    </div>
-    <section>
-      <div class="wrapper">
-        <div class="main-img">
-          <img src="/Denis Novik/img/Mainphoto.jpg" alt="Denis Novik" />
-        </div>
-      </div>
-    </section>
-  </main>
-  <section class="work-block">
-    <div class="wrapper">
-      <div class="text">
-        <h2>About me</h2>
-        <p>
-          Hi, I'm Denis – UX/UI designer from Minsk. <br />
-          I'm interested in design and everything connected with it.
-        </p>
-        <p>
-          I'm studying at courses "Web and mobile design <br />
-          interfaces" in IT-Academy.
-        </p>
-        <p>
-          Ready to implement excellent projects <br />
-          with wonderful people.
-        </p>
-      </div>
-    </div>
-  </section>
-  <section>
-    <div class="wrapper">
-      <div class="skills">
-        <h2>Skills</h2>
-        <p class="subtitle">I work in such programs as</p>
-        <div class="skills-flex">
-          <div class="skills-item">
-            <img src="/Denis Novik/img/Ps.png" alt="Ps" />
-            <p class="skills-text">Adobe Photoshop</p>
-            <img src="/Denis Novik/img/four stars.png" alt="Four stars" />
-          </div>
-          <div class="skills-item">
-            <img src="/Denis Novik/img/Ai.png" alt="Ai" />
-            <p class="skills-text">Adobe Illustrator</p>
-            <img src="/Denis Novik/img/Three stars.png" alt="Three stars" />
-          </div>
-          <div class="skills-item">
-            <img src="/Denis Novik/img/Ae.png" alt="Ae" />
-            <p class="skills-text">Adobe After Effects</p>
-            <img src="/Denis Novik/img/four stars.png" alt="Four stars" />
-          </div>
-          <div class="skills-item">
-            <img src="/Denis Novik/img/Figma.png" alt="Figma" />
-            <p class="skills-text">Figma</p>
-            <img src="/Denis Novik/img/four stars.png" alt="Four stars" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="work-block">
-    <div class="wrapper">
-      <h2 class="work-title">Portfolio</h2>
-      <div class="work">
-        <div class="work-item">
-          <img class="work-img" src="/Denis Novik/img/New Collection.png" alt="New Collection" />
-          <p class="work-subtitle">
-            <a class="work-subtitle" href="#">Online fashion store - Homepage</a>
-          </p>
-        </div>
-        <div class="work-item">
-          <img class="work-img" src="/Denis Novik/img/reebok_web.png" alt="reebok_web" />
-          <p class="work-subtitle">
-            <a class="work-subtitle" href="#">Reebok Store - Concept</a>
-          </p>
-        </div>
-        <div class="work-item">
-          <img class="work-img" src="/Denis Novik/img/photo.png" alt="Photo" />
-          <p class="work-subtitle">
-            <a class="work-subtitle" href="#">Braun Landing Page - Concept</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="wrapper">
-      <h2 class="footer-h2">Contacts</h2>
-      <p class="footer-subtitle">
-        Want to know more or just chat? <br />You are welcome!
+    <section class="main_about">
+      <h2 class="heading_about"> <a name="aboutme"></a> About Me</h2>
+      <p class="par_one_about">
+        Hi, I'm Denis – UX/UI designer from Minsk. <br>
+        I'm interested in design and everything connected with it.
+
+        <br><br><br>
+
+        I'm studying at courses "Web and mobile design <br>
+        interfaces" in IT-Academy.
+
+        <br><br><br>
+
+        Ready to implement excellent projects <br>
+        with wonderful people.
       </p>
-      <div class="footer-button">
-        <button class="button" type="button">Send message</button>
-      </div>
-    </div>
-    <div class="footer-icon">
-      <div class="footer-icon">
-        <img src="/Denis Novik/img/in.png" alt="In" />
-      </div>
-      <div class="footer-icon">
-        <img src="/Denis Novik/img/O.png" alt="O" />
-      </div>
-      <div class="footer-icon">
-        <img src="/Denis Novik/img/Be.png" alt="Be" />
-      </div>
-      <div class="footer-icon">
-        <img src="/Denis Novik/img/ball.png" alt="ball" />
-      </div>
-    </div>
-    <p class="footer-footer-subtitle">
-      Like me on LinkedIn, Instagram, Behance, Dribble
-    </p>
+    </section>
+
+    <section class="main_skills">
+      <h2 class="skills_skills">Skills</h2>
+      <p class="skills_p">I work in such programs as</p>
+      <ul class="skills_tree">
+        <li class="skills_item skills_item__photoshop">
+          <div class="skills_img"></div>
+          <p class="skills_par">Adobe<br>Photoshop</p>
+          <ul class="skills_stars">
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__none-active"></li>
+          </ul>
+        </li>
+        <li class="skills_item skills_item__illustrator">
+          <div class="skills_img"></div>
+          <p class="skills_par">Adobe<br> Illustrator</p>
+          <ul class="skills_stars">
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__none-active"></li>
+            <li class="skills_star skills_star__none-active"></li>
+          </ul>
+        </li>
+        <li class="skills_item skills_item__effects">
+          <div class="skills_img"></div>
+          <p class="skills_par">Adobe<br>After Effects</p>
+          <ul class="skills_stars">
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__none-active"></li>
+          </ul>
+        </li>
+        <li class="skills_item skills_item__figma">
+          <div class="skills_img"></div>
+          <p class="skills_par">Figma <br><br></p>
+          <ul class="skills_stars">
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__active"></li>
+            <li class="skills_star skills_star__none-active"></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="main_portfolio">
+      <h2 class="portfolio_title">Portfolio</h2>
+      <ul class="portfolio_list">
+        <li class="portfolio_item">
+          <div class="portfolio_img portfolio_img__fashion"></div>
+          <a href="#" class="portfolio_link">Online fashion store - Homepage</a>
+        </li>
+        <li class="portfolio_item">
+          <div class="portfolio_img portfolio_img__reebok"></div>
+          <a href="#" class="portfolio_link">Reebok Store - Concept</a>
+        </li>
+        <li class="portfolio_item">
+          <div class="portfolio_img portfolio_img__braun"></div>
+          <a href="#" class="portfolio_link">Braun Landing Page - Concept</a>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer_title"> Contacts </h2>
+    <p class="footer_desc">Want to know more or just chat? <br> You are welcome!</p>
+    <div class="footer_message">Send message</div>
+    <ul class="footer_imgs">
+      <li class="footer_item footer_item__linkedin"></li>
+      <li class="footer_item footer_item__instagram"></li>
+      <li class="footer_item footer_item__behance"></li>
+      <li class="footer_item footer_item__dribble"></li>
+    </ul>
+    <p class="footer_contacts">Like me on <br> LinkedIn, Instagram, Behance, Dribble </p>
   </footer>
 
-
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poliglot9/Project.git"
+  },
+  "author": "Aleksandr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/poliglot9/Project/issues"
+  },
+  "homepage": "https://github.com/poliglot9/Project#readme"
+}

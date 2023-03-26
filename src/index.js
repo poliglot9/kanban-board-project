@@ -3,7 +3,7 @@ let images = [{
 }, {
   url: "/media/banner2.png"
 }, {
-  url: "/media/baner3.png"
+  url: "/media/banner3.png"
 }];
 
 function initSlider(options) {
